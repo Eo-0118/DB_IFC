@@ -1,0 +1,31 @@
+# OS files
+.DS_Store
+
+# Spatial Data Files - Common formats
+# These are usually large and binary, unsuitable for git
+*.shp
+*.shx
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.cpg
+*.lock
+*.qix
+*.fix
+*.xml # Metadata XML often accompanying shapefiles
+
+# Specific Intermediate & Large Files
+# Explicitly ignoring intersected and processed spatial files seen in the folder
+*_intersected.*
+*_add_area.*
+
+# ZIP Archives
+*.zip
+
+# Temporary Directories
+temp/
+__pycache__/
+
+# Ignore any log files
+*.log

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="MD_메타데이터">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="메타데이터정보">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="기본정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="메타데이터파일식별자" type="xsd:string" />
+                    <xsd:element name="메타데이터언어" type="xsd:string" />
+                    <xsd:element name="메타데이터문자셋" type="xsd:string" />
+                    <xsd:element name="메타데이터적용계층대상" type="xsd:string" />
+                    <xsd:element name="메타데이터적용계층대상명" type="xsd:string" />
+                    <xsd:element name="메타데이터생성일자" type="xsd:unsignedInt" />
+                    <xsd:element name="메타데이터표준명" type="xsd:string" />
+                    <xsd:element name="메타데이터표준버젼" type="xsd:unsignedShort" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="메타데이터연락정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="책임자개인명" type="xsd:string" />
+                    <xsd:element name="책임자직위명" type="xsd:string" />
+                    <xsd:element name="책임기관명" type="xsd:string" />
+                    <xsd:element name="책임담당자역할" type="xsd:string" />
+                    <xsd:element name="연락정보">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="국가" type="xsd:string" />
+                          <xsd:element name="도시" type="xsd:string" />
+                          <xsd:element name="행정구역" type="xsd:string" />
+                          <xsd:element name="세부주소" type="xsd:string" />
+                          <xsd:element name="우편번호" type="xsd:unsignedShort" />
+                          <xsd:element name="전화번호" type="xsd:string" />
+                          <xsd:element name="연결위치" type="xsd:string" />
+                          <xsd:element name="획득방법" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="기준계배포정보">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="기준계정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="식별코드" type="xsd:string" />
+                    <xsd:element name="좌표참조계명" type="xsd:string" />
+                    <xsd:element name="기준계유형" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="배포정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="포맷명" type="xsd:string" />
+                    <xsd:element name="포맷정보내용" type="xsd:string" />
+                    <xsd:element name="파일압축기법" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="배포전송옵션">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="연결위치" type="xsd:string" />
+                    <xsd:element name="획득방법" type="xsd:string" />
+                    <xsd:element name="배분책임" type="xsd:string" />
+                    <xsd:element name="고객주문과정" type="xsd:string" />
+                    <xsd:element name="소요시간" type="xsd:string" />
+                    <xsd:element name="배포전송사이즈" type="xsd:string" />
+                    <xsd:element name="배포매체" type="xsd:string" />
+                    <xsd:element name="배포단위" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="데이터품질정보">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="데이터품질적용대상" type="xsd:string" />
+              <xsd:element name="품질연혁" type="xsd:string" />
+              <xsd:element name="품질결과">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="통과여부" type="xsd:string" />
+                    <xsd:element name="결과설명" type="xsd:string" />
+                    <xsd:element name="평가기준문서" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="식별정보">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="기본정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="식별기본정보">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="공간표현방식" type="xsd:string" />
+                          <xsd:element name="공간해상도" type="xsd:unsignedShort" />
+                          <xsd:element name="자원언어" type="xsd:string" />
+                          <xsd:element name="자원문자셋" type="xsd:string" />
+                          <xsd:element name="주제분류" type="xsd:string" />
+                          <xsd:element name="요약설명" type="xsd:string" />
+                          <xsd:element name="검색정보">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="도엽번호" type="xsd:unsignedShort" />
+                                <xsd:element name="도엽명" type="xsd:string" />
+                                <xsd:element name="지도분류유형" type="xsd:string" />
+                                <xsd:element name="지역범위" type="xsd:string" />
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="자원포맷">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="포맷명" type="xsd:string" />
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="제목" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="지리경계지리설명">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="서쪽경계경도" type="xsd:decimal" />
+                          <xsd:element name="동쪽경계경도" type="xsd:decimal" />
+                          <xsd:element name="남쪽경계위도" type="xsd:decimal" />
+                          <xsd:element name="북쪽경계위도" type="xsd:decimal" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="공간정보연락처">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="책임자개인명" type="xsd:string" />
+                    <xsd:element name="책임자직위명" type="xsd:string" />
+                    <xsd:element name="책임기관명" type="xsd:string" />
+                    <xsd:element name="책임담당자역할" type="xsd:string" />
+                    <xsd:element name="연락정보">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="국가" type="xsd:string" />
+                          <xsd:element name="도시" type="xsd:string" />
+                          <xsd:element name="행정구역" type="xsd:string" />
+                          <xsd:element name="세부주소" type="xsd:string" />
+                          <xsd:element name="우편번호" type="xsd:unsignedShort" />
+                          <xsd:element name="전화번호" type="xsd:string" />
+                          <xsd:element name="연결위치" type="xsd:string" />
+                          <xsd:element name="획득방법" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="범위지리정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="시간범위" type="xsd:string" />
+                    <xsd:element name="수직범위">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="최소값" type="xsd:decimal" />
+                          <xsd:element name="최대값" type="xsd:decimal" />
+                          <xsd:element name="측정단위" type="xsd:string" />
+                          <xsd:element name="수직기준점" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="지리정보">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="파일명" type="xsd:string" />
+                          <xsd:element name="파일크기" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="공간표현정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="기본정보">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="공간표현유형" type="xsd:string" />
+                          <xsd:element name="지구타원체명" type="xsd:string" />
+                          <xsd:element name="반장축" type="xsd:double" />
+                          <xsd:element name="반장축단위" type="xsd:string" />
+                          <xsd:element name="역편평율" type="xsd:double" />
+                          <xsd:element name="좌표계명" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="투영정보">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="투영명" type="xsd:string" />
+                          <xsd:element name="투영파라메타명" type="xsd:string" />
+                          <xsd:element name="투영파라메타값" type="xsd:string" />
+                          <xsd:element name="투영파라메타단위" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="제약정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="보안제약" type="xsd:string" />
+                    <xsd:element name="저작권" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="참조정보">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="진행상황코드" type="xsd:string" />
+                    <xsd:element name="갱신주기" type="xsd:string" />
+                    <xsd:element name="갱신범위" type="xsd:string" />
+                    <xsd:element name="참조자료일자">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="참조일자" type="xsd:unsignedInt" />
+                          <xsd:element name="참조일자유형" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
